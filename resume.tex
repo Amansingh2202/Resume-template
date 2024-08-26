@@ -1,0 +1,319 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage{ragged2e}
+
+\usepackage{multirow} % for \multirow command
+
+
+\usepackage{xcolor}
+\hypersetup{colorlinks,urlcolor=blue}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+% new
+% \usepackage{tgbonum}
+% \usepackage[T1]{fontenc}\
+% \usepackage[scaled=1.05,proportional,lightcondensed]{zlmtt}
+% \usepackage{CharisSIL}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\achievementItem}[1]{
+  \item\small{
+    {#1 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textbf{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\justify \begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+% HREF Colored
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Vineet Anil Likhitkar} \\ \vspace{1pt}
+    % 123 Street Name, Town, State 12345 \\ 
+    \vspace{5pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 9399946737 ~ 
+    \raisebox{-0.2\height}\faEnvelope\ \href{mailto:vineet.likhitkar@gmail.com}{ vineet.likhitkar@gmail.com} ~ 
+    \raisebox{-0.2\height}\faLinkedin\ \href{https://www.linkedin.com/in/iamv1n/}{ linkedin} ~
+    \raisebox{-0.2\height}\faGithub\ \href{https://github.com/iamv1n}{ github} ~ 
+    \raisebox{-0.2\height}\faGlobe\ \href{https://iamv1n.vercel.app/}{ vineet.site }
+    \vspace{-8pt}
+\end{center}
+
+%-------------Experience---------------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {{Graviti (ISUA Solutions Pvt. Ltd.)}}{Aug '24 -- Present}
+      {\textbf{Software Engineer Intern}}{Mumbai, India}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{Implemented automated order processing, vehicle dispatch logic in backend using \textbf{NestJS} CQRS.}
+        \resumeItem{Developed custom UI components using \textbf{AntD} and styled-components, creating consistent and flexible design in \textbf{NextJS}}
+        \resumeItem{Optimized \textbf{Ag-Grid} integration for managing bulk data entries through CSV files, enhancing load times by \textbf{20\%}.}
+      \resumeItemListEnd
+      % 
+      
+    \resumeSubheading
+      {Ramanujan Universe}{June '24 -- July' 24}
+      {\textbf{High Performance Computing Research Intern}}{Remote, India}
+      \vspace{-7pt}
+      \resumeItemListStart
+        % \resumeItem{Lead the development of a crucial segment of the product after KT to the end of first product release}
+        % \resumeItem{Worked on refining existing APIs built using ASP.NET}
+        \resumeItem{Implemented \textbf{OpenMPI} based parallel algorithms to boost computational efficiency by \textbf{40\%} in HPC environments.}
+        \resumeItem{Conducted comprehensive performance analysis and benchmarking of HPC systems using \textbf{MPIP} and \textbf{Scalasca}.}
+        \resumeItem{Developed machine learning pipelines optimized for HPC, accelerating data-driven research projects.}
+      \resumeItemListEnd
+      % 
+      
+    \resumeSubheading
+      {Knit}{Nov '23 -- July' 24}
+      {\textbf{Software Engineer Intern}}{Bengaluru, India}
+      \vspace{-7pt}
+      \resumeItemListStart
+        \resumeItem{Built a scalable e-commerce platform featuring an admin interface with real-time data visualisations and insights.}
+        \resumeItem{Designed the Core components including \textbf{GraphQL APIs} and implemented \textbf{CI/CD} pipelines.}
+        \resumeItem{Developed a \textbf{Redis caching} layer, reducing database load by \textbf{30\%} and improving page load times by \textbf{40\%}.}
+        \resumeItem{Integrated a payment gateway with real-time \textbf{webhook} updates, reducing transaction failure rates by \textbf{15\%}.}
+      \resumeItemListEnd
+      
+    % 
+    % \resumeSubheading
+      % {Freelance}{July '21 -- Nov '23}
+      % {\textbf{Fullstack Software Developer}}{Indore, India}
+      % \vspace{-7pt}
+      % \resumeItemListStart
+        % \resumeItem{Lead the development of a crucial segment of the product after KT to the end of first product release}
+        % \resumeItem{Worked on refining existing APIs built using ASP.NET}
+        % \resumeItem{Developed scalable Software and Web Application Solutions for Small Scale Businesses, operational efficiency by \textbf{35\%}. }
+        % \resumeItem{Implemented authentication and authorization mechanisms using \textbf{JWT }tokens and \textbf{OAuth} for secure API access.}
+        % \resumeItem{Developed and Integrated a Web Scraping tool collecting data from public forums to existing software.}
+	% \resumeItem{Implemented new methods exposed as \textbf{REST} and \textbf{GraphQL} APIs and refined existing APIs built using \textbf{Express/Apollo}.}
+      % \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    {\item{
+     \textbf{Languages}{: C/C++, Java, Python, JavaScript, SQL, Golang} \\
+     \vspace{1pt}
+     \textbf{Libraries/ Frameworks}{: ReactJS, NextJS, Redux, NodeJS, ExpressJS, Scikit-Learn, Tensorflow} \\
+     \vspace{1pt}
+     \textbf{Tools/ Platforms}{: Drizzle ORM,  Heroku, AWS, Git, GitHub, Docker, CI/CD, Firebase, Selenium} \\
+     \vspace{1pt}
+     \textbf{Databases/ APIs}{: MySQL, PostgreSQL, MongoDB, Redis, REST, GraphQL} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------PROJECTS-----------
+\section{Academic and Personal Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Harvest Hive} $|$ \emph{TypeScript, NextJS, MongoDB, AWS}  $|$ \href{https://github.com/iamv1n/Harvest-Hive}{Github} $|$ \href{https://harvesthive.vercel.app/}{Live}} {March 2024} 
+            \resumeItemListStart
+                \resumeItem{Developed an bidding based marketplace for farmers to sell crops at fair market value to vendors according to their bids.}
+		\resumeItem{Leveraged \textbf{NextJS} in a monorepo integrating both frontend, backend with Typescript.}
+                \resumeItem{Utilized \textbf{MongoDB} and \textbf{AWS S3}, deployed on \textbf{Vercel}, with a \textbf{CI/CD} pipeline.}
+            \resumeItemListEnd
+        % \resumeProjectHeading
+           %  {\textbf{PHOENIX} $|$ \emph{Java, Java Rings, Python} $|$ \href{https://github.com/iamv1n/phoenix}{GitHub}}{Sept 2023}     
+           %  \resumeItemListStart
+               % \resumeItem{PHOENIX - \emph{(Post-Quantum Hierarchical Obfuscation for Enhanced Network eXchanges)}}
+               % \resumeItem{Designed and implemented a lattice-based encryption algorithm, based on \textbf{NTRU cryptosystem}.}
+		% \resumeItem{Utilized \textbf{Jprofiler}, \textbf{JMC} for code profiling and benchmarking.}
+                % \resumeItem{Prototyped algorithm logic in Python for rapid validation and testing.}
+            % \resumeItemListEnd 
+ 	\resumeProjectHeading
+            {\textbf{PHOENIX} $|$ \emph{Python, Scipy, Advanced Algebra} $|$ \href{https://github.com/iamv1n/phoenix}{GitHub}}{Sept 2023}     
+            \resumeItemListStart
+               % \resumeItem{PHOENIX - \emph{(Post-Quantum Hierarchical Obfuscation for Enhanced Network eXchanges)}}
+                \resumeItem{Designed and implemented a lattice-based encryption algorithm, based on \textbf{NTRU cryptosystem}.}
+		\resumeItem{Utilized \textbf{cprofile} and \textbf{hyperfine} for code profiling and benchmarking.}
+                \resumeItem{Prototyped algorithm logic in Python for rapid validation and testing.}
+            \resumeItemListEnd 
+        \resumeProjectHeading
+            {\textbf{NewsPulse} $|$ \emph{NodeJS, ReactJS, REST API} $|$ \href{https://github.com/iamv1n/Newspulse}{Github} $|$ \href{https://news-pulse-theta.vercel.app/}{Live}} {March 2022}  
+            \resumeItemListStart
+                \resumeItem{Developed a web application that dynamically aggregates trending news headlines from diverse categories.}
+                \resumeItem{Integrated gnews API for the data and deployed the application on \textbf{Vercel} with \textbf{CI/CD} automation}
+            \resumeItemListEnd 
+        % \resumeProjectHeading
+        %     {\textbf{Lecture Logs} $|$ \emph{Java, Android Studio, Gradle} $|$ \href{https://github.com/bitstatic/lecture-logs}{GitHub}}{May 2023} 
+        %     \resumeItemListStart
+        %         \resumeItem{Developed a Java-based Android app to streamline schedule management for students in my University.}
+        %         \resumeItem{Implemented features such as real-time synchronization, intuitive schedule display, push notifications, and customization options.}
+        %     \resumeItemListEnd 
+        % \resumeProjectHeading
+        %     {\textbf{POS Tagger} $|$ \emph{Python, NLTK, Scikit-Learn} $|$ \href{https://github.com/iamv1n/pos-tagger}{GitHub}}{April 2023} 
+        %     \resumeItemListStart
+        %         \resumeItem{Built a Python-based tool utilizing the \textbf{NLTK} library for accurate Part-of-Speech (POS) tagging of sentences. }
+        %         \resumeItem{Trained on a tagged corpus using a \textbf{Decision Tree Classifier}, the tool assigns grammatical labels to words, enabling advanced linguistic analysis. }
+        %     \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jaypee University of Engineering and Technology}{July '21 -- June '25}
+      {Bachelor's of Technology in Computer Science }{Guna, MP, India}
+  \resumeSubHeadingListEnd
+
+
+%------------------POS-------------------------
+\section{Positions of Responsibility}
+   \resumeSubHeadingListStart
+      \resumeSubheading
+      {Google Developer Student Club JUET}{Aug '21 -- May '23}
+      {Development Lead}{Guna, MP, India}
+      \vspace{-7pt}
+      \resumeItemListStart
+        % \resumeItem{Lead the development of a crucial segment of the product after KT to the end of first product release}
+        % \resumeItem{Worked on refining existing APIs built using ASP.NET}
+        \resumeItem{Led the Development Wing at GDSC JUET and mentored 100+ students in the club.}
+        \resumeItem{Facilitated workshops and seminars to enhance technical skills and foster a culture of innovation among members.}
+        %\resumeItem{Spearheaded the planning and execution of high-impact tech events that attracted a diverse audience and contributed to the growth of the club's community.}
+	%\resumeItem{Coordinated hackathons with themes ranging from mobile app development using React Native to machine learning challenges using Python and TensorFlow.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+ \vspace{-10pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Academic Achievements \& Extra-Curricular}
+
+\begin{itemize}[leftmargin=0.2in]
+  \achievementItem{\textbf{Won} Inter-School programming Contest Excella in 2018.}
+  % \achievementItem{\textbf{Rated 1579} in \textbf{Codechef} and \textbf{930} in \textbf{CodeForces}.}
+  \achievementItem{\textbf{Ranked 2nd} in a local Hackathon among 30+ teams in 2019.}
+  \achievementItem{Authored and published technical blog posts at \href{https://iamv1n.hashnode.dev/}{ iamv1n.hashnode.dev}.}
+  \achievementItem{Active Contributor at \textbf{MindsDB}, \textbf{Meshery} and many more Open Source Projects.}
+  % \achievementItem{\textbf{Mentored and Lead} the Development wing at \textbf{GDSC JUET} (University Club) in 2022-23.}
+\end{itemize}
+        
+    % \resumeSubHeadingListEnd
+
+
+\end{document}
