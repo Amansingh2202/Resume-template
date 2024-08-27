@@ -41,7 +41,7 @@ jobs:
                   cp CNAME build/
                   cp *.html build/
                   cp resume.pdf build/ 
-                  mv build/resume.pdf build/vineet-anil-likhitkar-resume.pdf
+                  mv build/resume.pdf build/aman-singh-resume.pdf
                   
             - name: Git add
               run: git add resume.pdf
